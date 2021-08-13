@@ -1,0 +1,72 @@
+package pageObjectRepository;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import core.Base;
+
+public class PhonesPDAsPageObject extends Base {
+	
+	public PhonesPDAsPageObject() {
+		PageFactory.initElements(driver, this);
+	}
+	@FindBy(xpath = "//a[contains(text(),'Phones & PDAs')]")
+	private WebElement PhonesAndPDAs;
+	
+	@FindBy(id = "//button[@id ='list-view']")
+	private WebElement List;
+	
+	@FindBy(id = "//button[@id='grid-view']")
+	private WebElement Grid;
+	
+	@FindBy(id = "//a[@id='compare-total']")
+	private WebElement ProductCompare;
+	
+	@FindBy(className = "(//label[@class='input-group-addon'])[1]")
+	private WebElement SortByiPhone;
+	
+	@FindBy(xpath = "//select[@id='input-sort']")
+	private WebElement iPhoneSearchBar;
+	
+	@FindBy(className = "(//label[@class='input-group-addon'])[2]")
+	private WebElement SortByPalmTreoPro;
+	
+	@FindBy(className = "(//select[@class='form-control'])[2]")
+	private WebElement PalmTreoProSearchBar;
+	
+	@FindBy(xpath = "//a[contains(text(),'HTC Touch HD')]")
+	private WebElement HTCTouchHD;
+	
+	@FindBy(className = "(//span[@class='hidden-xs hidden-sm hidden-md'])[7]")
+	private WebElement HTCTouchHDAddToCart;
+	
+	@FindBy(className = "(//i[@class='fa fa-heart'])[2]")
+	private WebElement HTCTouchHDAddToWishList;
+	
+	@FindBy(className = "(//i[@class='fa fa-exchange'])[1]")
+	private WebElement HTCTouchHDCompareThis;
+	
+	@FindBy(xpath = "//a[contains(text(),'iPhone')]")
+	private WebElement iPhone;
+	
+	@FindBy(className = "(//span[@class='hidden-xs hidden-sm hidden-md'])[8]")
+	private WebElement iPhoneAddToCart;
+	
+	@FindBy(className = "(//i[@class='fa fa-heart'])[3]")
+	private WebElement iPhoneAddToWishList;
+	
+	@FindBy(className = "(//i[@class='fa fa-exchange'])[2]")
+	private WebElement iPhoneCompareThis;
+	
+	@FindBy(xpath = "//a[contains(text(),'Palm Treo Pro')]")
+	private WebElement PalmTreoPro;
+	
+	@FindBy(className = "(//span[@class='hidden-xs hidden-sm hidden-md'])[9]")
+	private WebElement PalmTreoProAddToCart;
+	
+	@FindBy(className = "(//i[@class='fa fa-heart'])[4]")
+	private WebElement PalmTreoProAddToWishList;
+	
+	@FindBy(className = "(//i[@class='fa fa-exchange'])[3]")
+	private WebElement PalmTreoProCompareThis;
+}

@@ -1,0 +1,149 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 16711112000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Retail Website",
+            "match": {
+              "location": "LoginTestStepDef.user_is_on_Retail_Website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 133897800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click on Desktops tab",
+            "match": {
+              "location": "DesktopPageStepDef.user_click_on_Desktops_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2636908400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on Show all desktop page",
+            "match": {
+              "location": "DesktopPageStepDef.user_click_on_Show_all_desktop_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 22,
+            "value": "#\"Success: you have added HP LP 3065 to your cart!\""
+          },
+          {
+            "line": 24,
+            "value": "#scenario 3"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 193243378000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initializer.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "User add canon EOS \"5D\" from desktops tab to the cart",
+        "description": "",
+        "id": "desktops;user-add-canon-eos-\"5d\"-from-desktops-tab-to-the-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 688751400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initializer.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "User click ADD TO CART option on \"Canon EOS 5D\" item",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "User select color from dropdown \"Red\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "User click add to Cart button",
+            "match": {
+              "location": "DesktopPageStepDef.user_click_add_to_Cart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "User should see a message \"Success: You have added Canon EOS 5D to your shopping cart!\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 25,
+            "name": "@AddCanonEOS5D"
+          }
+        ]
+      }
+    ],
+    "name": "Desktops",
+    "description": "",
+    "id": "desktops",
+    "keyword": "Feature",
+    "uri": "Features/desktopspage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@CompleteTest"
+      }
+    ]
+  }
+]
